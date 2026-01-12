@@ -2,10 +2,11 @@
 
 import { FiArrowLeft, FiCheckCircle } from "react-icons/fi";
 
-import { registerUser } from '@grupo21/utils'
+import { auth } from '@grupo21/shared-react'
 import { FormEvent, useState } from "react";
 
 export default function SignUp() {
+  const { registerUser } = auth
 
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
